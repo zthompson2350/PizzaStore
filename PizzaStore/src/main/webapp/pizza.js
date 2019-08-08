@@ -20,7 +20,7 @@ function sunbmitPress() {
     http.open("POST", 'http://localhost:8080/', true);
     http.send();
     console.log(http);
-
+    jsonBuilder();
 
     http.onreadystatechange = function monitorState() {
         console.log(http);
@@ -29,3 +29,8 @@ function sunbmitPress() {
         }
     };
 };
+
+window.onload = function() {
+    console.log("immediate invoked onload");
+    document.getElementById("pizzaForm").addEventListener("click", sunbmitPress, true);
+}

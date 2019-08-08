@@ -8,13 +8,7 @@
 </head>
 <body>
     <h1>ORDER FORM</h1>
-    <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="LOGIN.HTML">LOGIN</a></li>
-            <li><a href="ORDER.html">ORDER PIZZA</a></li>
-            <li><a href="ORDERS.html">ORDERS</a></li>
-        </ul>
-    <form id="pizzaForm" mehod="POST">
+    <form id="pizzaForm" method="POST">
         Size Pizza: 
         <select id="size">
             <option value="seventyPassing">small</option>
@@ -27,7 +21,9 @@
                 <option value="two" >pepperoni</option>
                 <option value="three">hawaiian</option>
             </select>
-            <input type="submit" value="SUBMIT">
+        <button id="submitBtn"> Submit </button>
     </form>
 </body>
+
+<script src ="pizza.js"></script>
 </html>
