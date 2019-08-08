@@ -29,3 +29,8 @@ function sunbmitPress() {
         }
     };
 };
+
+window.onload = function() {
+    console.log("immediate invoked onload");
+
+}
